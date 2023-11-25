@@ -5,4 +5,4 @@ nested = [
 ]
 
 for i in nested:
-    print(i['name'])
+    print(i['name'], i['age'])
