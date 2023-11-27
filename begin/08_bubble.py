@@ -1,5 +1,5 @@
 import random
-random_arr = random.sample(range(100), 10)
+random_arr = random.sample(range(100), 100)
 print(random_arr)
 
 
