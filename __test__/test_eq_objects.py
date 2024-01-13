@@ -8,7 +8,7 @@ class TestEqObjects(unittest.TestCase):
         Test that eq_objets returns true, given two eq eq_objects
         """
         result = eq_objects({"a": {"c": 2}, "b": 1}, {"a": {"c": 2}, "b": 1})
-        self.assertTrue(result)
+        self.assertTrue(result, f"Expected true, but got {result}")
 
 
 if __name__ == "__main__":
