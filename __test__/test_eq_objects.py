@@ -10,6 +10,10 @@ class TestEqObjects(unittest.TestCase):
         result = eq_objects({"a": {"c": 2}, "b": 1}, {"a": {"c": 2}, "b": 1})
         self.assertTrue(result, f"Expected true, but got {result}")
 
+    def test_eq_objects_nulls(self):
+        result = eq_objects({}, None)
+        self.assertFalse(result)
+
 
 if __name__ == "__main__":
     unittest.main()
