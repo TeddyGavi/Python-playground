@@ -9,7 +9,3 @@ def eq_objects(obj1, obj2):
                 return False
 
     return True
-
-
-print(eq_objects({'a': {'c': 2}, 'b': 1}, {'a': {'c': 2}, 'b': 1}))  # true
-print(eq_objects({'a': 1, 'b': 1}, {'a': {'c': 2}, 'b': 1}))  # false

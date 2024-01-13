@@ -6,7 +6,3 @@ def count_letters(str):
         else:
             results[i] = 1
     return results
-
-
-print(count_letters('hi'))
-print(count_letters('hiiiiiihhhi'))
