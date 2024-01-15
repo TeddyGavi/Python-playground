@@ -1,5 +1,5 @@
 def eq_arrays(arr1, arr2):
-    if len(arr1) != len(arr2):
+    if not arr1 or not arr2 and len(arr1) != len(arr2):
         return False
     else:
         for idx, i in enumerate(arr1):
@@ -10,8 +10,8 @@ def eq_arrays(arr1, arr2):
     return True
 
 
-print(eq_arrays([1, 2, 3], [1, 2, 3]))
-print(eq_arrays([1, [1, 2], 3], [1, 2, 3]))
-print(eq_arrays([1, [1, 2], 3], [1, [1, 2], 3]))
-print(eq_arrays([1, [1, [1, 2], 2], 3], [1, [1, [1, 2], 2], 3]))
-print(eq_arrays([1, [1, [1], 2], 3], [1, [1, [1, 2], 2], 3]))
+# print(eq_arrays([1, 2, 3], [1, 2, 3]))
+# print(eq_arrays([1, [1, 2], 3], [1, 2, 3]))
+# print(eq_arrays([1, [1, 2], 3], [1, [1, 2], 3]))
+# print(eq_arrays([1, [1, [1, 2], 2], 3], [1, [1, [1, 2], 2], 3]))
+# print(eq_arrays([1, [1, [1], 2], 3], [1, [1, [1, 2], 2], 3]))
