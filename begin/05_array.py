@@ -1,4 +1,4 @@
-names = ['Bob', 'Billy', "Carl", 'Luna']
+names = ["Bob", "Billy", "Carl", "Luna"]
 print(range(len(names)))
 
 for i in names:
@@ -7,7 +7,14 @@ for i in names:
 print(*range(len(names)), sep=",")
 
 for i in names:
-    i = i + 's'
+    i = i + "s"
     print(i)
 
 print(names)
+
+
+def multiples(integer, limit):
+    return list(range(integer, limit + 1, integer))
+
+
+print(multiples(2, 6))
